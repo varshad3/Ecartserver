@@ -18,7 +18,7 @@ const cors= require('cors')
 const server=express()
 
 // to create a variable to store the port number
-const PORT = 3000
+const PORT = 3000 || process.env.PORT
 
 // use in server app 
 server.use(cors())
